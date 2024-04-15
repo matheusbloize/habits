@@ -14,3 +14,21 @@ body,
 #root {
   height: 100%;
 }
+
+.border-link:hover::after {
+  width: 100%;
+}
+
+.border-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: .1em;
+  transition: width .33s linear;
+  width: 0%;
+}
+
+.border-link::after {
+  background-color: #000000;
+}

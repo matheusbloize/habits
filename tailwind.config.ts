@@ -21,6 +21,10 @@ const config: Config = {
         "hb-red": "#CA5F5F",
         "hb-orange": "#CA925F",
       },
+      fontSize: {
+        heading: "2.75vw",
+        paragraph: "1.2vw",
+      },
     },
   },
   plugins: [],

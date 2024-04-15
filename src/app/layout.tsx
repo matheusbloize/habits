@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+
 import "./globals.css";
+import Header from "@/components/Header";
 
 const excon = localFont({ src: "../assets/fonts/Excon-Variable.ttf" });
 
@@ -16,7 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${excon.className} flex flex-col`}>{children}</body>
+      <body className={`${excon.className} flex flex-col`}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
